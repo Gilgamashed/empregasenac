@@ -1,0 +1,35 @@
+from tkinter.constants import CASCADE
+
+from django.db import models
+
+NIVEIS = (
+    ('estagio','Estágio'),
+    ('trainee','Trainee'),
+    ('junior','Júnior'),
+    ('pleno','Pleno'),
+    ('senior','Sênior'),
+)
+
+class Vagas(models.Model):
+    empresa = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    vaga = models.CharField(max_length=100)
+    descricao = models.TextField()
+    nivel = models.CharField(max_length=10, choices=NIVEIS)
+    localidade = models.CharField(max_length=100)
+    salario = models.DecimalField(max_digits=10, decimal_places=2)
+    criada_em = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.vaga} - {self.nivel}"
+
+class Candidatura(models.Model):
+    vaga = models.ForeignKey(Vagas, on_delete=models.CASCADE)
+    nome = models.CharField(max_length=100)
+    email = models.EmailField()
+    curriculo = models.FileField(upload_to='curriculos/')
+    data_envio = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.nome} - {self.vaga}"
+
+# Create your models here.
