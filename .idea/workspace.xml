@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/empregasenac.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/templates/vagas/candidatura_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/templates/vagas/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_conform_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/urls.py" afterDir="false" />
+    <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="Initial untested">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +67,19 @@
       <option name="presentableId" value="Default" />
       <updated>1752097047912</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial untested">
+      <option name="closed" value="true" />
+      <created>1752184532013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752184532013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial untested" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial untested" />
   </component>
 </project>
