@@ -20,9 +20,11 @@ from django.contrib.auth.views import LogoutView, LoginView
 from django.urls import path, include
 
 from vagas import views
+from vagas.views import CandidatoSignUpView, EmpresaSignUpView, HomeView
 
 urlpatterns = [
-    path("", views.VagasListView.as_view(), name='vagas-list'),
+    path('', HomeView.as_view(), name='home'),
+    path("vagas", views.VagasListView.as_view(), name='vagas-list'),
     path('vagas/nova/', views.VagasCreateView.as_view(), name='vagas-create'),
     path('vagas/<int:pk>/editar/', views.VagasUpdateView.as_view(), name='vagas-update'),
     path('vagas/<int:pk>/deletar/', views.VagasDeleteView.as_view(), name='vagas-delete'),
@@ -30,7 +32,8 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('login/', LoginView.as_view(template_name='vagas/login.html'), name='login'),
-    path('logout/', LogoutView.as_view(next_page='login'), name='logout')
-
+    path('login/', LoginView.as_view(template_name='registration/login.html'), name='login'),
+    path('logout/', LogoutView.as_view(next_page='login'), name='logout'),
+    path('signup/candidato/',CandidatoSignUpView.as_view(), name='signup_candidato'),
+    path('signup/empresa/', EmpresaSignUpView.as_view(), name='signup_empresa'),
 ]

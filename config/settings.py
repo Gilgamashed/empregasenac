@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 
+from django.urls import reverse_lazy
 from dotenv import load_dotenv
 
 # Load enviroments
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'cloudinary',
     'cloudinary_storage',
+    'widget_tweaks',
     'vagas'
 ]
 
@@ -143,4 +145,6 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+LOGIN_URL = reverse_lazy('login')
 LOGIN_REDIRECT_URL = '/'
+

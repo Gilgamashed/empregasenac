@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="Initial untested">
+    <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="git launch">
+      <change afterPath="$PROJECT_DIR$/vagas/templates/registration/signup_candidato.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vagas/templates/registration/signup_empresa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vagas/templates/vagas/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +35,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Gilgamashed&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Gilgamashed/empregasenac.git&quot;,
+    &quot;accountId&quot;: &quot;7438e524-0e28-4bf8-8cff-fe288e829209&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -32,23 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/caius/Desktop/AulaSenac/AulaBackEndAtividades/empregasenac/.venv",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/caius/Desktop/AulaSenac/AulaBackEndAtividades/empregasenac/.venv&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac\.venv" />
       <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac\vagas" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac\vagas\templates\registration" />
+      <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac\vagas\templates" />
+      <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac\vagas\templates\vagas\registration" />
       <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac" />
     </key>
   </component>
@@ -75,11 +101,20 @@
       <option name="project" value="LOCAL" />
       <updated>1752184532013</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="git launch">
+      <option name="closed" value="true" />
+      <created>1752268260105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752268260105</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial untested" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial untested" />
+    <MESSAGE value="git launch" />
+    <option name="LAST_COMMIT_MESSAGE" value="git launch" />
   </component>
 </project>
