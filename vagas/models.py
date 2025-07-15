@@ -11,8 +11,25 @@ NIVEIS = (
     ('senior','Sênior'),
 )
 
+class Candidato(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    nome = models.CharField(max_length=100)
+    telefone = models.CharField(max_length=20)
+    cidade = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.user.username
+
+class Empresa(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    nome_empresa = models.CharField(max_length=200)
+    cnpj = models.CharField(max_length=18)
+
+    def __str__(self):
+        return self.nome_empresa
+
 class Vagas(models.Model):
-    empresa = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE)
     vaga = models.CharField(max_length=100)
     descricao = models.TextField()
     nivel = models.CharField(max_length=10, choices=NIVEIS)
@@ -33,20 +50,5 @@ class Candidatura(models.Model):
     def __str__(self):
         return f"{self.nome} - {self.vaga}"
 
-class Candidato(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    nome = models.CharField(max_length=100)
-    telefone = models.CharField(max_length=20)
-    cidade = models.CharField(max_length=100)
 
-    def __str__(self):
-        return self.user.username
-
-class Empresa(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    nome_empresa = models.CharField(max_length=200)
-    cnpj = models.CharField(max_length=18)
-
-    def __str__(self):
-        return self.nome_empresa
 # Create your models here.

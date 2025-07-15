@@ -1,17 +1,21 @@
 from datetime import datetime
 
 import cloudinary.uploader
+from django.contrib import messages
 from django.contrib.auth import login, logout
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
 from django.core.mail import send_mail
+from django.http import HttpResponse, HttpResponseForbidden
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView, View, TemplateView
 
 from config import settings
 from vagas.forms import VagasForm, CandidaturaForm, CandidatoSignUpForm, EmpresaSignUpForm
+from .mixins import EmpresaRequiredMixin
 from .models import Vagas, Candidatura, Candidato, Empresa
+from .util import is_empresa, is_candidato
 
 
 class VagasListView(ListView):
@@ -19,21 +23,30 @@ class VagasListView(ListView):
     template_name='vagas/vagas_list.html'
     context_object_name= 'vagas'
 
-class VagasCreateView(LoginRequiredMixin,CreateView):
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['is_empresa'] = Empresa.objects.filter(user=self.request.user).exists()
+        return context
+
+class VagasCreateView(LoginRequiredMixin,EmpresaRequiredMixin, CreateView):
     model = Vagas
     form_class = VagasForm
     template_name = 'vagas/vagas_form.html'
     success_url = reverse_lazy('vagas-list')
 
-class VagasUpdateView(LoginRequiredMixin,UpdateView):
+    def form_valid(self, form):                    #associa automaticamente a vaga à emrpesa logada
+         form.instance.empresa = self.request.empresa_logada
+         return super().form_valid(form)
+
+class VagasUpdateView(LoginRequiredMixin,EmpresaRequiredMixin,UpdateView):
     model = Vagas
     form_class = VagasForm
     template_name = 'vagas/vagas_form.html'
     success_url = reverse_lazy('vagas-list')
 
-class VagasDeleteView(LoginRequiredMixin,DeleteView):
+class VagasDeleteView(LoginRequiredMixin, EmpresaRequiredMixin,DeleteView):
     model = Vagas
-    template_name = 'vagas/vagas_confirm_delete.html'
+    template_name = 'vagas/vaga_confirm_delete.html'
     success_url = reverse_lazy('vagas-list')
 
 class CandidaturasCreateView(LoginRequiredMixin,View):
@@ -79,7 +92,7 @@ class CandidatoSignUpView(CreateView):
     model = User
     form_class = CandidatoSignUpForm
     template_name = "registration/signup_candidato.html"
-    success_url = reverse_lazy('vagas-list') #TODO: mudar para página de home
+    success_url = reverse_lazy('home')
 
     def form_valid(self, form):
         response = super().form_valid(form)
@@ -97,7 +110,7 @@ class EmpresaSignUpView(CreateView):
     model = User
     form_class = EmpresaSignUpForm
     template_name = "registration/signup_empresa.html"
-    success_url = reverse_lazy('vagas-list')  # TODO: mudar para página de home
+    success_url = reverse_lazy('home')
 
     def form_valid(self, form):
         response = super().form_valid(form)

@@ -27,7 +27,7 @@ urlpatterns = [
     path("vagas", views.VagasListView.as_view(), name='vagas-list'),
     path('vagas/nova/', views.VagasCreateView.as_view(), name='vagas-create'),
     path('vagas/<int:pk>/editar/', views.VagasUpdateView.as_view(), name='vagas-update'),
-    path('vagas/<int:pk>/deletar/', views.VagasDeleteView.as_view(), name='vagas-delete'),
+    path('vagas/<int:pk>/excluir/', views.VagasDeleteView.as_view(), name='vagas-delete'),
     path('candidatar/<int:vaga_id>/', views.CandidaturasCreateView.as_view(), name='candidatar'),
 ]
 

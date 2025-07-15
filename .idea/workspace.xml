@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="git launch">
-      <change afterPath="$PROJECT_DIR$/vagas/templates/registration/signup_candidato.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/templates/registration/signup_empresa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vagas/templates/vagas/home.html" afterDir="false" />
+    <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="Aula 11/07/25">
+      <change afterPath="$PROJECT_DIR$/vagas/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vagas/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vagas/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vagas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/vagas_conform_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_confirm_delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/vagas_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vagas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vagas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/views.py" afterDir="false" />
     </list>
@@ -27,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -109,12 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1752268260105</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Aula 11/07/25">
+      <option name="closed" value="true" />
+      <created>1752368472320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752368472320</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial untested" />
     <MESSAGE value="git launch" />
-    <option name="LAST_COMMIT_MESSAGE" value="git launch" />
+    <MESSAGE value="Aula 11/07/25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 11/07/25" />
   </component>
 </project>
