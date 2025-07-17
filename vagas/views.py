@@ -13,7 +13,7 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView, V
 
 from config import settings
 from vagas.forms import VagasForm, CandidaturaForm, CandidatoSignUpForm, EmpresaSignUpForm
-from .mixins import EmpresaRequiredMixin
+from .mixins import EmpresaRequiredMixin, VagasOwnerMixin, CandidatoRequiredMixin
 from .models import Vagas, Candidatura, Candidato, Empresa
 from .util import is_empresa, is_candidato
 
@@ -25,7 +25,9 @@ class VagasListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['is_empresa'] = Empresa.objects.filter(user=self.request.user).exists()
+        context['is_empresa'] = (Empresa.objects.filter(user=self.request.user).exists()
+                                 if self.request.user.is_authenticated else False
+                                 )      #TODO fazer teste unitário para verificar quem está logado
         return context
 
 class VagasCreateView(LoginRequiredMixin,EmpresaRequiredMixin, CreateView):
@@ -38,18 +40,18 @@ class VagasCreateView(LoginRequiredMixin,EmpresaRequiredMixin, CreateView):
          form.instance.empresa = self.request.empresa_logada
          return super().form_valid(form)
 
-class VagasUpdateView(LoginRequiredMixin,EmpresaRequiredMixin,UpdateView):
+class VagasUpdateView(LoginRequiredMixin,EmpresaRequiredMixin,VagasOwnerMixin, UpdateView):
     model = Vagas
     form_class = VagasForm
     template_name = 'vagas/vagas_form.html'
     success_url = reverse_lazy('vagas-list')
 
-class VagasDeleteView(LoginRequiredMixin, EmpresaRequiredMixin,DeleteView):
+class VagasDeleteView(LoginRequiredMixin, EmpresaRequiredMixin, VagasOwnerMixin, DeleteView):
     model = Vagas
     template_name = 'vagas/vaga_confirm_delete.html'
     success_url = reverse_lazy('vagas-list')
 
-class CandidaturasCreateView(LoginRequiredMixin,View):
+class CandidaturasCreateView(LoginRequiredMixin, CandidatoRequiredMixin, View):
     def get(self, request, vaga_id):
         form = CandidaturaForm()
         return render(request, 'vagas/candidatura_form.html', {'form': form})

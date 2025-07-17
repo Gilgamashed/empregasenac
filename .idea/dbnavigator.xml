@@ -28,6 +28,8 @@
 
 select * from public.vagas_candidato;
 
+select * from public.vagas_vagas
+
 select * from public.auth_user]]></console>
     </connection>
   </component>
