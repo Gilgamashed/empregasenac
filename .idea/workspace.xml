@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="Aula 14/07/25">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="Aula 16/07/25">
       <change beforePath="$PROJECT_DIR$/vagas/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vagas/migrations/0002_candidato_empresa.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vagas/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vagas/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/mixins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vagas/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vagas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for tests.CandidaturaAccessTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests.CandidaturaAccessTest.teste_candidato_acessa_formulario.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/caius/Desktop/AulaSenac/AulaBackEndAtividades/empregasenac/.venv&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for tests.CandidaturaAccessTest.executor": "Run",
+    "Python tests.Python tests for tests.CandidaturaAccessTest.teste_candidato_acessa_formulario.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/caius/Desktop/AulaSenac/AulaBackEndAtividades/empregasenac/.venv",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac\.venv" />
@@ -161,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752548074244</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Aula 16/07/25">
+      <option name="closed" value="true" />
+      <created>1752714186832</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752714186832</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,6 +172,7 @@
     <MESSAGE value="git launch" />
     <MESSAGE value="Aula 11/07/25" />
     <MESSAGE value="Aula 14/07/25" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 14/07/25" />
+    <MESSAGE value="Aula 16/07/25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 16/07/25" />
   </component>
 </project>
