@@ -30,7 +30,7 @@ select * from public.vagas_candidato;
 
 select * from public.vagas_vagas
 
-select * from public.auth_user]]></console>
+select * from public.auth_user;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -43,6 +43,9 @@ select * from public.auth_user]]></console>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="5f9c626c-43f9-4396-a64b-16c72f679167" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="5f9c626c-43f9-4396-a64b-16c72f679167" dataset="public.vagas_vagas" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
@@ -73,7 +76,7 @@ select * from public.auth_user]]></console>
           <tns-folder value="" />
           <tns-profile value="" />
           <type value="USER_PASSWORD" />
-          <user value="postgres.utjysptzhvauttqxzlod" />
+          <user value="postgres.wbdrkksbrtyazopvsydx" />
           <token-type value="" />
           <token-config-file value="" />
           <token-profile value="" />

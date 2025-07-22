@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5635a251-c015-4a44-81e5-8576fb9c59d2" name="Changes" comment="Aula 16/07/25">
-      <change beforePath="$PROJECT_DIR$/vagas/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vagas/migrations/0002_candidato_empresa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vagas/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/candidatura_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/candidatura_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/templates/vagas/vagas_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/templates/vagas/vagas_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vagas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vagas/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +63,13 @@
     "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/caius/Desktop/AulaSenac/AulaBackEndAtividades/empregasenac/.venv",
+    "last_opened_file_path": "C:/Users/caius/Desktop/AulaSenac/AulaBackEndAtividades/empregasenac",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac" />
       <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac\.venv" />
       <recent name="C:\Users\caius\Desktop\AulaSenac\AulaBackEndAtividades\empregasenac\vagas" />
     </key>
@@ -164,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752714186832</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aula 16/07/25">
+      <option name="closed" value="true" />
+      <created>1752714494497</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752714494497</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

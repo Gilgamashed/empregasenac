@@ -1,6 +1,5 @@
 import pytest
 from django.contrib.auth.models import User
-from django.http import response
 from django.test import TestCase, Client
 from django.urls import reverse
 
@@ -52,12 +51,11 @@ class CandidaturaAccessTest(TestCase):
         response = self.client.get(self.url_candidatura)
         self.assertRedirects(response, reverse('vagas-list'))
         messages = list(response.wsgi_request._messages)
-        self.assertTrue(any("perfil de candidato" in str(m) for m in messages))
+        self.assertTrue(any("Empresas não podem se candidatar" in str(m) for m in messages))
 
     def test_usuario_nao_autenticado(self):
-        self.client.get(self.url_candidatura)
+        response = self.client.get(self.url_candidatura)  # Capturar a resposta?
         self.assertRedirects(response, f"/login/?next={self.url_candidatura}")
-
 
 
 
